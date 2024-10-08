@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>Fixed-Size Images in a Div</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .fixed-size-image {
+            width: 150px;
+            /* Fixed width */
+            height: 150px;
+            /* Fixed height */
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20240618141932/61M1WuTUcUL_AC_UF10001000_QL80_-(1).jpg"
+            alt="photo" class="fixed-size-image" />
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20240618140923/asus.jpg" 
+             alt="photo"
+            class="fixed-size-image" />
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20240618140635/microsoft.jpeg" 
+             alt="photo"
+            class="fixed-size-image" />
+        <!-- Add more images as needed -->
+    </div>
+</body>
+
+</html>
